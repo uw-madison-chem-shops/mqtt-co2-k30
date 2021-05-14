@@ -1,4 +1,4 @@
-# MQTT weather station
+# MQTT CO2 K30
 
 Simple project to get [K30 CO2 sensors](https://www.co2meter.com/products/k-30-co2-sensor-module) online using MQTT.
 
