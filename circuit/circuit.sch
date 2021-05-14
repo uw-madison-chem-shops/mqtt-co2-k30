@@ -1,0 +1,226 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "CO2 Sensor"
+Date "2020-07-28"
+Rev "1.0.0"
+Comp "University of Wisconsin-Madison"
+Comment1 "Department of Chemistry"
+Comment2 "Bertram Group"
+Comment3 "Blaise Thompson"
+Comment4 "bthompson@chem.wisc.edu"
+$EndDescr
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 5F0E28AB
+P 2700 3600
+F 0 "J?" H 2757 3925 50  0000 C CNN
+F 1 "Barrel_Jack" H 2757 3834 50  0000 C CNN
+F 2 "" H 2750 3560 50  0001 C CNN
+F 3 "~" H 2750 3560 50  0001 C CNN
+	1    2700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mylib:Pololu_2843 U?
+U 1 1 5F1F3A25
+P 4600 2600
+F 0 "U?" H 4978 2588 50  0000 L CNN
+F 1 "Pololu_2843" H 4978 2497 50  0000 L CNN
+F 2 "" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mylib:K30 U?
+U 1 1 5F1F521D
+P 3850 4150
+F 0 "U?" H 3850 4515 50  0000 C CNN
+F 1 "K30" H 3850 4424 50  0000 C CNN
+F 2 "" H 3850 4150 50  0001 C CNN
+F 3 "" H 3850 4150 50  0001 C CNN
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1F8E09
+P 3100 3700
+F 0 "#PWR?" H 3100 3450 50  0001 C CNN
+F 1 "GND" H 3105 3527 50  0000 C CNN
+F 2 "" H 3100 3700 50  0001 C CNN
+F 3 "" H 3100 3700 50  0001 C CNN
+	1    3100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3700 3000 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5F1FA933
+P 3500 4250
+F 0 "#PWR?" H 3500 4000 50  0001 C CNN
+F 1 "GND" H 3505 4077 50  0000 C CNN
+F 2 "" H 3500 4250 50  0001 C CNN
+F 3 "" H 3500 4250 50  0001 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1FBB23
+P 4700 3050
+F 0 "#PWR?" H 4700 2800 50  0001 C CNN
+F 1 "GND" H 4705 2877 50  0000 C CNN
+F 2 "" H 4700 3050 50  0001 C CNN
+F 3 "" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3500 4500 3050
+NoConn ~ 4300 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5F1FC933
+P 6500 5150
+F 0 "#PWR?" H 6500 4900 50  0001 C CNN
+F 1 "GND" H 6505 4977 50  0000 C CNN
+F 2 "" H 6500 5150 50  0001 C CNN
+F 3 "" H 6500 5150 50  0001 C CNN
+	1    6500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1FCB36
+P 6700 5150
+F 0 "#PWR?" H 6700 4900 50  0001 C CNN
+F 1 "GND" H 6705 4977 50  0000 C CNN
+F 2 "" H 6700 5150 50  0001 C CNN
+F 3 "" H 6700 5150 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6600 3550
+NoConn ~ 7200 4050
+NoConn ~ 7200 4250
+$Comp
+L Device:R_US R?
+U 1 1 5F1FE9A8
+P 5500 3800
+F 0 "R?" H 5568 3846 50  0000 L CNN
+F 1 "4.7k" H 5568 3755 50  0000 L CNN
+F 2 "" V 5540 3790 50  0001 C CNN
+F 3 "~" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F1FED7B
+P 5000 3800
+F 0 "R?" H 5068 3846 50  0000 L CNN
+F 1 "4.7k" H 5068 3755 50  0000 L CNN
+F 2 "" V 5040 3790 50  0001 C CNN
+F 3 "~" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Adafruit_HUZZAH_ESP8266_breakout A?
+U 1 1 5F1F25DC
+P 6600 4350
+F 0 "A?" H 6050 3700 50  0000 C CNN
+F 1 "Adafruit_HUZZAH_ESP8266_breakout" H 5700 3600 50  0000 C CNN
+F 2 "" H 6800 4950 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/2471" H 6900 5050 50  0001 C CNN
+	1    6600 4350
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 7200 4450
+NoConn ~ 7200 4550
+NoConn ~ 7200 4750
+NoConn ~ 6000 4750
+NoConn ~ 6000 4650
+NoConn ~ 6000 4550
+NoConn ~ 6000 4450
+NoConn ~ 6000 4350
+NoConn ~ 6000 4050
+Wire Wire Line
+	3000 3500 3500 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 3500 4500 3500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F214014
+P 6400 3550
+F 0 "#PWR?" H 6400 3400 50  0001 C CNN
+F 1 "+3.3V" H 6415 3723 50  0000 C CNN
+F 2 "" H 6400 3550 50  0001 C CNN
+F 3 "" H 6400 3550 50  0001 C CNN
+	1    6400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3050 4900 3250
+Wire Wire Line
+	4900 3250 6800 3250
+Wire Wire Line
+	6800 3250 6800 3550
+Wire Wire Line
+	6000 3950 5900 3950
+Wire Wire Line
+	5900 3950 5900 3150
+Wire Wire Line
+	5900 3150 7300 3150
+Wire Wire Line
+	7300 3150 7300 4150
+Wire Wire Line
+	7300 4150 7200 4150
+Wire Wire Line
+	4200 4250 6000 4250
+Wire Wire Line
+	5500 4050 5500 4150
+Wire Wire Line
+	5500 4150 6000 4150
+Wire Wire Line
+	5500 3950 5500 4050
+Connection ~ 5500 4050
+Wire Wire Line
+	4200 4050 5000 4050
+Wire Wire Line
+	5000 3950 5000 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	5000 4050 5500 4050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F22BF39
+P 5500 3650
+F 0 "#PWR?" H 5500 3500 50  0001 C CNN
+F 1 "+3.3V" H 5515 3823 50  0000 C CNN
+F 2 "" H 5500 3650 50  0001 C CNN
+F 3 "" H 5500 3650 50  0001 C CNN
+	1    5500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F22C319
+P 5000 3650
+F 0 "#PWR?" H 5000 3500 50  0001 C CNN
+F 1 "+3.3V" H 5015 3823 50  0000 C CNN
+F 2 "" H 5000 3650 50  0001 C CNN
+F 3 "" H 5000 3650 50  0001 C CNN
+	1    5000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3500 3500 4050
+$EndSCHEMATC

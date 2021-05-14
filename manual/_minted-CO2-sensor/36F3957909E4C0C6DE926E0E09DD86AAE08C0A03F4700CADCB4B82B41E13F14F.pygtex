@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{WIFI\PYGZus{}SSID} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}chemcast\PYGZdq{}}
+\PYG{n}{WIFI\PYGZus{}PASSWORD} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZlt{}REDACTED\PYGZgt{}\PYGZdq{}}
+
+\PYG{n}{MQTT\PYGZus{}BROKER} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}mqtt.chem.wisc.edu\PYGZdq{}}
+\PYG{n}{MQTT\PYGZus{}USERNAME} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}bertram\PYGZdq{}}
+\PYG{n}{MQTT\PYGZus{}PASSWORD} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZlt{}REDACTED\PYGZgt{}\PYGZdq{}}
+
+\PYG{n}{DEVICE\PYGZus{}ID} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}bertram\PYGZhy{}co2\PYGZhy{}\PYGZlt{}ID\PYGZgt{}\PYGZdq{}}
+\end{Verbatim}

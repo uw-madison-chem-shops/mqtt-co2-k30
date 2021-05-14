@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} flash micropython}
+\PYG{n+nb}{read} \PYGZhy{}p \PYG{l+s+s2}{\PYGZdq{}bring GPIO0 low, reset device, and press enter\PYGZdq{}}
+esptool.py \PYGZhy{}\PYGZhy{}port /dev/ttyUSB0 erase\PYGZus{}flash
+\PYG{n+nb}{read} \PYGZhy{}p \PYG{l+s+s2}{\PYGZdq{}bring GPIO0 low, reset device, and press enter\PYGZdq{}}
+esptool.py \PYGZhy{}p /dev/ttyUSB0 \PYGZhy{}\PYGZhy{}baud \PYG{l+m}{450800} \PYGZhy{}\PYGZhy{}chip esp8266 \PYG{l+s+se}{\PYGZbs{}}
+	   write\PYGZus{}flash 0x00000 microhomie\PYGZhy{}esp8266\PYGZhy{}v2.4.0\PYGZhy{}beta1.bin
+\PYG{n+nb}{read} \PYGZhy{}p \PYG{l+s+s2}{\PYGZdq{}reset device and press enter\PYGZdq{}}
+\PYG{c+c1}{\PYGZsh{} upload files}
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}sleeping\PYGZdq{}}
+sleep \PYG{l+m}{5}
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}putting files on device\PYGZdq{}}
+ampy \PYGZhy{}p /dev/ttyUSB0 put main.py
+ampy \PYGZhy{}p /dev/ttyUSB0 put settings.py
+\PYG{n+nb}{read} \PYGZhy{}p \PYG{l+s+s2}{\PYGZdq{}reset device and press enter\PYGZdq{}}
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}done!\PYGZdq{}}
+\end{Verbatim}
